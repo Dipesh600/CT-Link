@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT Link</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding:0 ;
+        }
+        .container{
+            display: grid;
+            background-color: darkgrey;
+            grid-template-rows: 50px auto 150px;
+            width: 100%;
+            height: 600px;
+        }
+
+        .nav{display: grid; grid-template-columns: 150px auto auto; background-color: blueviolet;text-align: center;}
+        #logo{margin-top: -18px;}
+
+        #head{padding: 15px;text-align: left;display: flex; align-items: center; justify-content: center;}
+        #head h2{ margin-top: -60px;}
+        #searchBar{ height:30px;width: 280px; margin-left: 200px; border-radius: 15px;padding: 10px;margin-bottom: 60px;}
+        .links{ display: grid; grid-template-columns: auto auto auto; text-align: center; padding: 15px;}
+        #sites:hover{color: brown;}
+        a{ text-decoration: none; color:black;}
+        a:hover{text-decoration:underline;color: brown;}
+        .main{
+            margin: 3px;
+        display: grid;
+        grid-template-columns: 25% auto 25%;
+        }
+        #room{
+            background-color: aquamarine;
+           display: grid;
+           grid-template-rows: auto auto;
+           place-items: center;
+           margin: 3px;
+           border: 3px solid black;
+           border-radius: 10px;
+        }
+        #linkRoom{
+            margin:-60px;
+
+        }
+        #linkInput{
+            
+            border-radius: 5px 10px 5px 10px;
+            border: 2px yellow solid;
+            height: 20px;
+            width: 75%; 
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+        #description{
+            text-align: justify;
+            padding: 5px;
+        }
+        ::placeholder{
+            text-align:center;
+
+        }
+        #suggestionBox{
+            border: 2px solid black;
+            border-radius: 10px ;
+            margin:3px;
+            text-align: center;
+            background-color: burlywood;
+            padding-top: 50%;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px;
+        }
+        #sitesLink ul{
+            list-style-type: none;
+
+        }
+        #sitesLink ul li{
+            padding: 5px;
+        }
+        #sitesLink ul h3{
+            padding-left: 10px;
+        }
+        #mail{ padding:10px;}
+        #sitesLink ul li a{
+            padding-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div id="logo"><img src="logo.png" alt="logo" width="100px" height="100px"></div>
+            <div id="head">
+                <h2>CT-Link</h2>
+                <input type="search" name="search" id="searchBar" placeholder="Search for products...">
+            
+            </div>
+            <div class="links">
+                <div id="sites">sites dropdown</div>
+                <a href="about.html">About us</a>
+                <a href="profile">profile</a>
+            </div>
+        </div>
+        <div class="main">
+            <div id="suggestionBox">NoThing to show
+
+            </div>
+            <div id="room">
+                <div id="linkRoom">
+                    <h1>Paste Your link below:</h1>
+                    <input type="url" id="linkInput" placeholder="Link please...">
+                </div>
+                <div id="description">
+                    <h3>Why not us?</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, labore? Harum maxime nulla iusto consectetur explicabo ipsa id, beatae tempore temporibus quae debitis veritatis? Quo ab, labore blanditiis mollitia corporis sequi tempora laboriosam asperiores nam ratione minus atque, ipsum magni deleniti vero necessitatibus. Magni eum quam doloremque ducimus voluptatum! Laboriosam doloremque impedit temporibus quae rem delectus, labore officia tenetur incidunt aliquam ipsa quasi natus corrupti dolores minima similique praesentium, accusamus non soluta voluptatem, officiis facere atque libero ratione. Iusto nemo debitis et? Molestias nam magni aperiam esse. Iusto, eaque ex nemo doloribus aspernatur quisquam minus harum amet repellat unde voluptate officia vitae necessitatibus earum et vel sint itaque officiis. Deserunt repellat nobis nisi molestiae illum laborum minima aperiam dolore unde.</p></div>
+
+                
+            </div>
+            <div id="suggestionBox">NoThing to show</div>
+        </div>
+        <div class="footer">
+            <div id="sitesLink">
+                <ul>
+                    <h3>Get More Links from </h3>
+                    <li><i class="fa fa-amazon" aria-hidden="true"></i><a href="https://www.amazon.in" target="_blank">Amazon</a></li>
+                    <li><i class="fa fa-shopping-bag" aria-hidden="true"></i><a href="https://www.flipkart.com/" target="_blank">Flipkart</a></li>
+                    <li><i class="fa fa-shopping-basket" aria-hidden="true"></i><a href="https://www.daraz.com.np/" target="_blank">daraz</a></li>
+                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="https://www.meesho.com/" target="_blank">Meesho</a></li>
+                    
+                </ul>
+            </div>
+            <div id="sitesLink">
+                <ul>
+                    <h3>Contact us</h3>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:dipeshch040313@gmail.com" id="mail" target="_blank">Click to mail</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div id="sitesLink"></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
